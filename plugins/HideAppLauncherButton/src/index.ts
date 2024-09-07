@@ -9,7 +9,7 @@ let unpatch: () => boolean;
 
 export default {
     onLoad() {
-        const blockList = ["appsicon"].map(n => getAssetIDByName(n));
+        const blockList = ["LottieIcon", "LottieElement", "lottie_icon", "lottie_element", "AppsIcon"].map(n => getAssetIDByName(n));
         unpatch = after("render", ChatInput.prototype, (_, ret) => {
             const input = findInReactTree(ret, t => "forceAnimateButtons" in t.props && t.props.actions);
             input.props.actions = input.props.actions.filter(a => !blockList.includes(a.source));
