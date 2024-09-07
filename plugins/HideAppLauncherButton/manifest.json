@@ -1,0 +1,14 @@
+{
+    "name": "HideAppLauncherButton",
+    "description": "Hides the app laucnher button in the chat input.",
+    "authors": [
+        {
+            "name": "kowkodivka",
+            "id": "796709259256791090"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "ic_badge_staff"
+    }
+}
